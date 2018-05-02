@@ -1,0 +1,18 @@
+body {
+  background-image: url('dark-evening.jpg');
+ 
+}
+
+.font {
+  color: white;
+}
+
+.icon {
+  color: white;
+}
+
+.temp {
+  background-color: transparent;
+  color: violet;
+  border: transparent;
+}

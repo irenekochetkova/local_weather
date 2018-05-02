@@ -22,37 +22,32 @@ function displayWeather(data) {
   console.log(data);
   var degSym = '°';
   var tempScale = 'F';
-  // var currentTemp = 0;
   var weather = data.weather[0].description;
-  // var icon = data.weather[0].icon;
-  var wind = data.wind.speed;
+  // var wind = data.wind.speed;
   var city = data.name;
   var country = data.sys.country;
   var currentTemp = data.main.temp;
-  
-  $("#description").html("weather: " + weather + '<br>' +"wind: " + wind + " mph");
-  // $("#image").html("<img src = '" + icon + "'>");  
+
+  var getIcon = data.weather[0].icon;
+  var iconUrl = "http://openweathermap.org/img/w/" + getIcon + ".png";
+  $(".icon").html("<img src='" + iconUrl  + "'>");
+
+  // $("#description").html(weather + '<br>' +"wind: " + wind + " mph");
   $("#city").text(city + ', ' + country); 
   $("#temperature").html(kelvinToFahrenheit(currentTemp) + ' °F');
-  $("button").text("to ºC"); 
-  // $("#temp_icon").html("ºC");  
+  $("button").text("to ºC");
 
   $("button").click(function() {
 
    if (tempScale === "F") {
-    $("#temperature").text(kelvinToCelsius(currentTemp) + " " + degSym +  "C");
-    $("button").text("to ºF");
+     $("#temperature").text(kelvinToCelsius(currentTemp) + " " + degSym +  "C");
+     $("button").text("to ºF");
     tempScale = "C";
-   } else {
-    $("#temperature").text(kelvinToFahrenheit(currentTemp) + " " + degSym  + "F");
-    $("button").text("to ºC");
-    tempScale = "F";
-   } 
-   
-   
-
-
-
+    } else {
+     $("#temperature").text(kelvinToFahrenheit(currentTemp) + " " + degSym  + "F");
+     $("button").text("to ºC");
+     tempScale = "F";
+    } 
   });
 } 
 

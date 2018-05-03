@@ -1,18 +1,75 @@
-body {
-  background-image: url('dark-evening.jpg');
+#back {
+  background-image: url('default.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
  
 }
 
 .font {
-  color: white;
+    color: black;
+    position : absolute;    
+    width    : 200px;
+    height   : 200px;
+    left     : 50%;
+    top      : 50%;
+    margin-left : -100px;
+    margin-top  : -100px; 
+    border-radius: 21px;
+    border: 2px solid gray;
+    background: darkgrey;
+    margin: 3%;
+     font-family: Roboto;
 }
 
 .icon {
   color: white;
+  text-align: center;
 }
 
-.temp {
-  background-color: transparent;
-  color: violet;
-  border: transparent;
+
+.city {
+ 
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.degrees {
+   text-align: center;
+   font-size: 25px;
+}
+
+.conver {
+   
+   border-radius: 21px;
+   background: lightgrey;
+   border: 2px solid gray;;
+
+}
+
+#buttonId {
+    outline: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#description {
+   text-align: center;
+   font-family: Roboto;
+}
+
+.frame-container { 
+    text-align: center; 
+    width    : 200px;
+    height   : 200px;
+    left     : 50%;
+    top      : 50%;
+    margin-left : -100px; 
+    margin-top  : -100px; 
+    border-radius: 21px;
+    border: 2px solid gray;
+    background: darkgrey;
+
 }

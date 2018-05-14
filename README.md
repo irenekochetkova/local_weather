@@ -1,6 +1,6 @@
 <h1>Dr. Weather</h1> 
 # local_weather
-<h4>jQuery, AJAX, JS; HTML5, CSS (NO Bootstrap) </h4>
+<h4>jQuery, JSON, JS; HTML5, CSS (Bootstrap 4.1.0) </h4>
 <p>---------------------------------</p>
 <h3 class="text-center">User Story:</h3>
 <ul>
